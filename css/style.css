@@ -1,5 +1,184 @@
-/** Common Styles */
+/*reset box sizing*/
 body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+	color: black;
+	letter-spacing: 0.03em;
+	 -webkit-font-smoothing: antialiased
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Navigation Section */
+.top-navigation {
+    background-color: #fff;
+    position: fixed;
+	width: 100%;
+	z-index: 9999;
+}
+
+.content {
+    width: 79rem;
+    margin: 0 auto;
+    padding: 0px 15px
+}
+
+.top-navigation .logo {
+    height: 4.375rem;
+    
+}
+
+.top-navigation .links {
+
+	float:right;
+	margin-top: 1.7rem;
+
+
+
+}
+
+.top-navigation .links > li {
+
+	display: inline-block;
+	 margin-left: 2rem;
+}
+
+.top-navigation .links > .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+
+/*introduction section*/
+
+.introduction {
+    background-image: url('../images/first.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto
+}
+
+.introduction h1 {
+    margin-top: 17.5rem;
+    font-size: 3.125rem;
+}
+
+.introduction h1, .introduction h3 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.introduction h3 {
+        margin-top: -1rem;
+    font-size: 1.563rem;
+}
+
+.big-button {
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 16px 26px;
+    line-height: 1.33;
+    display: block;
+    margin: 0 auto;
+    background-color: #f15a29;
+    color: white;
+    font-size: 1.125rem;
+    width: 9.4rem;
+}
+
+button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+}
+
+/*cases*/
+
+.cases h2 {
+    font-size: 2.75rem;
+    margin: 6rem 0 3.125rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.cases .devices {
+    width: 33.3333333%;
+    display: inline-block;
+    /* styles to assist with debugging */
+    box-sizing: border-box;
+    height: 4em;
+    margin-right: -4px;
+    text-align: center;
+}
+
+.cases .devices h3 {
+    font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
+}
+
+/*footer*/
+
+.social hr {
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin-top: 9rem;
+}
+
+.social h5 {
+	text-align: center;
+	font-weight: normal;
+}
+
+.social .icons > li:hover {
+    cursor: pointer;
+}
+
+.social .icons {
+
+	margin:-1em 34rem 0em 30rem;
+}
+.social .icons > li {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1.25rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+    text-align: center;
+}
+.social .twitter {
+    color: #55acee;
+}
+
+.social .copy {
+
+	    /* text-align: center; */
+    margin-left: 33rem;
+   font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
+}
+
+
+
+
+/** Common Styles */
+/*body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -15,6 +194,8 @@ button {
   color: white;
   font-size: 1.125rem;
 }
+
+
 
 button:hover {
   background-color: #d9400e;
@@ -32,36 +213,7 @@ button:hover {
   outline: none;
 }
 
-/** Responsive Design */
-@media (min-width: 48rem) {
-  .content {
-    width: 46rem;
-  }
-}
-@media (min-width: 62rem) {
-  .content {
-    width: 60rem;
-  }
-}
-@media (min-width: 75rem) {
-  .content {
-    width: 60%;
-  }
-}
 
-/** Animations */
-/* Chrome, Safari, Opera */
-@-webkit-keyframes bounce {
-  0%, 100% {margin-top: 0px;}
-  50% {margin-top: 2rem;}
-}
-/* Standard syntax */
-@keyframes bounce {
-  0%, 100% {margin-top: 0px;}
-  50% {margin-top: 2rem;}
-}
-
-/* Navigation Section */
 .top-navigation {
   background-color: #fff;
   position: fixed;
@@ -100,7 +252,7 @@ button:hover {
   color: #333333;
 }
 
-/** Introduction Section */
+
 .introduction {
   background-image: url('../images/first.jpg');
   background-position: center bottom;
@@ -127,7 +279,7 @@ button:hover {
   font-size: 1.563rem;
 }
 
-/** The introduction buttons */
+
 .introduction .buttons {
   color: white;
   text-align: center;
@@ -143,7 +295,6 @@ button:hover {
   line-height: 1.2;
 }
 
-/** The Three Case Images */
 .cases {
   background-color: #fff;
   overflow: hidden;
@@ -163,9 +314,9 @@ button:hover {
   font-weight: 300;
 }
 
-.cases .devices > li {
+.cases .devices {
   width: 33.3333333%;
-  float:left;
+  display: inline-block;
 }
 
 .cases .devices h3 {
@@ -179,7 +330,7 @@ button:hover {
   font-size: 1.313rem;
 }
 
-/** Footer */
+
 .social {
   background-color: #fff;
   overflow: auto;
@@ -232,8 +383,10 @@ button:hover {
 }
 
 .social .copy {
-	margin-top: -2em;
+	margin-top: 2em;
   font-size: 0.9rem;
   font-weight: 300;
   color: #838994;
 }
+
+*/
