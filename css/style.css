@@ -193,6 +193,18 @@ button:hover {
   margin: 1.313rem 0;
 }
 
+.social .icons {
+
+	margin-left: -2em;
+	margin-top: -1.5em;
+}
+
+.social h5 {
+
+	font-weight: normal;
+}
+
+
 .social .icons > li {
   border-radius: 1.25rem;
   width: 2.5rem;
@@ -220,6 +232,7 @@ button:hover {
 }
 
 .social .copy {
+	margin-top: -2em;
   font-size: 0.9rem;
   font-weight: 300;
   color: #838994;
